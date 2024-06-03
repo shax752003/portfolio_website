@@ -161,4 +161,147 @@ nav#desktop-nav .nav-links li a:hover {
     transform: none;
   }
 
+  /* hero section */
+  section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+
+  .section-container{
+    display: flex;
+  }
+
+  /* profile section*/
+
+  #profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+
+   .section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+   }
+
+   .section__text{
+     align-self: center;
+     text-align: center;
+   }
+
+   .section__text p {
+    font-weight: 600;
+   }
+
+   .section__text__p1 {
+    text-align: center;
+   }
+
+   .section__text__p2 {
+     font-size: 1.75rem;
+     margin-bottom: 1rem;
+   }
+
+   .title {
+    font-size: 3rem;
+    text-align: center;
+   }
+
+   #socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+   }
+
+   /* icons */
+
+   #socials-container img {
+    height: 2.5rem; 
+    width: 2.5rem;  
+    cursor: pointer;
+  }
+
+  /* Adjust the spacing around the icons  */
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem; 
+  }
+
+  /* buttons */
+
+  .btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+
+  /* Rounded button styles download cv */
+.btn.btn-rounded {
+  position: relative; /* for pseudo-element positioning */
+  overflow: hidden; /* to clip the pseudo-element */
+  border: none; /* Remove default border */
+  background-color: transparent; /* Set background to transparent */
+}
+
+.btn.btn-rounded .text-green {
+  color: rgb(83, 82, 82);
+  mix-blend-mode: difference;
+}
+
+.btn.btn-rounded::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 25%;
+  height: 100%;
+  background: rgb(82,82,82);
+  transition: all 300ms ease;
+  z-index: -1; /* Ensure it's behind the text */
+}
+
+.btn.btn-rounded:hover::before {
+  width: 100%;
+}
+
+
+/* button-contact */
+.btn-color-1{
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1:hover {
+  cursor: pointer;
+}
+
+.btn-color-1 {
+  background: rgb(82, 82, 82);
+  color: white;
+}
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-container {
+  gap: 1.5rem;
+}
+
+
 
