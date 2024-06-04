@@ -1,263 +1,272 @@
 /* general styling */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-p{
-    color: rgb(85, 85, 85);
+p {
+  color: rgb(85, 85, 85);
 }
 
 /* transition */
 
-a, 
-.btn{
-    transition: all 300ms ease;
+a,
+.btn {
+  transition: all 300ms ease;
 }
 
 /* desktop nav */
 
-nav, .nav-links{
-    display: flex;
+nav,
+.nav-links {
+  display: flex;
 }
 
-nav{
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
 }
+
 nav .logo img.logo-img {
-    margin-right: 0.5rem;
-    height: 120px; 
-}
-.nav-links{
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+  margin-right: 0.5rem;
+  height: 120px;
 }
 
-a{
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
 /* Underline Stroke Effect */
 nav#desktop-nav .nav-links li a {
-    position: relative;
-  }
-  /* Change text color to grey on hover */
+  position: relative;
+}
+
+/* Change text color to grey on hover */
 nav#desktop-nav .nav-links li a:hover {
-    color: grey;
-  }
-  nav#desktop-nav .nav-links li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #aaa;
-    height: 1px;
-    transition: width 0.3s ease-in-out; /* Add transition for smooth animation */
-  }
-  
-  /* Expand underline on hover */
-  nav#desktop-nav .nav-links li a:hover:after {
-    width: 100%;
-  }
+  color: grey;
+}
 
-  /* hamburger menu */
+nav#desktop-nav .nav-links li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  transition: width 0.3s ease-in-out;
+  /* Add transition for smooth animation */
+}
 
-   #hamburger-nav {
-    display: none;
-  }
-  
-  .hamburger-menu {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-  }
-  
-  .hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
-  }
-  
-  .menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-  }
-  
-  .menu-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-  }
-  
-  .menu-links li {
-    list-style: none;
-  }
-  
-  .menu-links.open {
-    max-height: 300px;
-  }
-  
-  .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-  }
-  
-  .hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-  }
-  
-  .hamburger-icon span:first-child {
-    transform: none;
-  }
-  
-  .hamburger-icon span:first-child {
-    opacity: 1;
-  }
-  
-  .hamburger-icon span:first-child {
-    transform: none;
-  }
+/* Expand underline on hover */
+nav#desktop-nav .nav-links li a:hover:after {
+  width: 100%;
+}
 
-  /* hero section */
-  section{
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-  }
+/* hamburger menu */
 
-  .section-container{
-    display: flex;
-  }
+#hamburger-nav {
+  display: none;
+}
 
-  /* profile section*/
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
 
-  #profile{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-  }
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
 
-   .section__pic-container{
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-   }
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
 
-   .section__text{
-     align-self: center;
-     text-align: center;
-   }
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
 
-   .section__text p {
-    font-weight: 600;
-   }
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
 
-   .section__text__p1 {
-    text-align: center;
-   }
+.menu-links li {
+  list-style: none;
+}
 
-   .section__text__p2 {
-     font-size: 1.75rem;
-     margin-bottom: 1rem;
-   }
+.menu-links.open {
+  max-height: 300px;
+}
 
-   .title {
-    font-size: 3rem;
-    text-align: center;
-   }
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
 
-   #socials-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-   }
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
 
-   /* icons */
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
 
-   #socials-container img {
-    height: 2.5rem; 
-    width: 2.5rem;  
-    cursor: pointer;
-  }
+.hamburger-icon span:first-child {
+  transform: none;
+}
 
-  /* Adjust the spacing around the icons  */
-  #socials-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem; 
-  }
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
 
-  /* buttons */
+.hamburger-icon span:first-child {
+  transform: none;
+}
 
-  .btn-container{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
+/* hero section */
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
 
-  .btn{
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-  }
+.section-container {
+  display: flex;
+}
 
-  /* Rounded button styles download cv */
+/* profile section*/
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* icons */
+
+#socials-container img {
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+/* Adjust the spacing around the icons  */
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* buttons */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+/* Rounded button styles download cv */
 .btn.btn-rounded {
-  position: relative; /* for pseudo-element positioning */
-  overflow: hidden; /* to clip the pseudo-element */
-  border: none; /* Remove default border */
-  background-color: transparent; /* Set background to transparent */
+  position: relative;
+  /* for pseudo-element positioning */
+  overflow: hidden;
+  /* to clip the pseudo-element */
+  border: none;
+  /* Remove default border */
+  background-color: transparent;
+  /* Set background to transparent */
 }
 
 .btn.btn-rounded .text-green {
@@ -273,20 +282,21 @@ nav#desktop-nav .nav-links li a:hover {
   border-radius: 50px;
   width: 25%;
   height: 100%;
-  background: rgb(82,82,82);
+  background: rgb(82, 82, 82);
   transition: all 300ms ease;
-  z-index: -1; /* Ensure it's behind the text */
+  z-index: -1;
+  /* Ensure it's behind the text */
 }
 
 .btn.btn-rounded:hover::before {
   width: 100%;
 }
 
-
 /* button-contact */
-.btn-color-1{
+.btn-color-1 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
+
 .btn-color-1:hover {
   cursor: pointer;
 }
@@ -295,6 +305,7 @@ nav#desktop-nav .nav-links li a:hover {
   background: rgb(82, 82, 82);
   color: white;
 }
+
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
 }
@@ -303,13 +314,15 @@ nav#desktop-nav .nav-links li a:hover {
   gap: 1.5rem;
 }
 
-
 /* Quote Slider Section */
 #quote-slider-section {
-  padding: 50px 0; /* Adjust padding as needed */
-  background-color: #f9f9f9; /* Adjust background color as needed */
+  padding: 50px 0;
+  /* Adjust padding as needed */
+  background-color: #f9f9f9;
+  /* Adjust background color as needed */
   text-align: center;
-  position: relative; /* Make section relative for button positioning */
+  position: relative;
+  /* Make section relative for button positioning */
   height: 12rem;
 }
 
@@ -317,12 +330,14 @@ nav#desktop-nav .nav-links li a:hover {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  height: 200px; /* Adjust height as needed */
+  height: 200px;
+  /* Adjust height as needed */
   overflow: hidden;
 }
 
 .quote {
-  display: none; /* Hide all quotes by default */
+  display: none;
+  /* Hide all quotes by default */
   position: absolute;
   top: 0;
   left: 0;
@@ -332,13 +347,15 @@ nav#desktop-nav .nav-links li a:hover {
 }
 
 .quote.active {
-  display: block; /* Show active quote */
+  display: block;
+  /* Show active quote */
   opacity: 1;
 }
 
 blockquote {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem; /* Adjust font size as needed */
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
   font-style: italic;
   margin: 0;
 }
@@ -347,7 +364,8 @@ cite {
   display: block;
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 1.25rem; /* Adjust font size as needed */
+  font-size: 1.25rem;
+  /* Adjust font size as needed */
   font-weight: bold;
 }
 
@@ -374,4 +392,57 @@ cite {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  height: 50px;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
 
