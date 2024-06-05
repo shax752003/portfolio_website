@@ -446,3 +446,194 @@ cite {
   margin: auto 0;
 }
 
+
+/* SKILLS SECTION */
+#skills {
+  position: relative;
+  padding: 50px 0; /* Add padding for spacing */
+  background-color: #f9f9f9;
+  height: min-content; /* Adjust background color as needed */
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center; /* Center the title */
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Add gap between the two containers */
+}
+
+.details-container {
+  max-width: 400px; /* Set a max width for better layout */
+  margin: 1rem; /* Add margin for spacing */
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem; /* Reduced gap between articles */
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  width: 10rem;
+  justify-content: flex-start; /* Align content to the start */
+  gap: 0.5rem;
+}
+
+article .icon {
+  width: 24px; /* Set a fixed width for the icon */
+  height: 24px; /* Set a fixed height for the icon */
+  cursor: default;
+}
+
+article h3 {
+  font-size: 1rem; /* Adjust font size */
+  margin: 0;
+}
+
+article p {
+  font-size: 0.875rem; /* Adjust font size */
+  color: #666; /* Adjust text color */
+  margin: 0;
+}
+
+.arrow {
+  width: 30px; /* Adjust arrow size */
+  height: auto;
+  margin-top: 2rem; /* Add margin for spacing */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+  transform: translateY(-5px); /* Add hover effect */
+}
+
+
+/* Rounded button styles */
+.btn.btn-rounded {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+}
+
+.btn.btn-rounded .text-green {
+  color: rgb(83, 82, 82);
+  mix-blend-mode: difference;
+}
+
+.btn.btn-rounded::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 25%;
+  height: 100%;
+  background: rgb(82, 82, 82);
+  transition: all 300ms ease;
+  z-index: -1;
+}
+
+.btn.btn-rounded:hover::before {
+  width: 100%;
+}
+
+/* Projects Section */
+#projects {
+  position: relative;
+  padding: 4vh 10rem;
+  background-color: #ffffff;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.details-container {
+  max-width: 300px;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.details-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.project-title {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(163, 163, 163);
+  background: none;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-btn:hover {
+  background: rgb(163, 163, 163);
+  color: #fff;
+}
