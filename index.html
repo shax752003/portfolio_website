@@ -284,7 +284,73 @@
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
 </section>
 
-   
+   <!-- Contact Section -->
+   <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="trapdoor-container">
+        <img src="./assets/email.png" alt="Email icon" class="front-icon" />
+        <div class="trapdoor">
+          <div class="top door"></div>
+          <div class="bottom door"></div>
+          <div class="contact-link">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+            <a href="mailto:examplemail@gmail.com">Gmail</a>
+          </div>
+        </div>
+      </div>
+      <div class="trapdoor-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="front-icon" />
+        <div class="trapdoor">
+          <div class="top door"></div>
+          <div class="bottom door"></div>
+          <div class="contact-link">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+            <a href="https://www.linkedin.com">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="trapdoor-container">
+        <img src="./assets/github.png" alt="GitHub icon" class="front-icon" />
+        <div class="trapdoor">
+          <div class="top door"></div>
+          <div class="bottom door"></div>
+          <div class="contact-link">
+            <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+            <a href="https://github.com">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="trapdoor-container">
+        <img src="./assets/twitter.png" alt="Twitter icon" class="front-icon" />
+        <div class="trapdoor">
+          <div class="top door"></div>
+          <div class="bottom door"></div>
+          <a href="https://twitter.com/twholman" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="false">Follow @twholman</a>
+          <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+              js=d.createElement(s);js.id=id;
+              js.src="https://platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js,fjs);
+            }}(document,"script","twitter-wjs");
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.trapdoor').forEach(trapdoor => {
+      trapdoor.addEventListener('mouseover', function() {
+        this.classList.add('open');
+      });
+      trapdoor.addEventListener('mouseout', function() {
+        this.classList.remove('open');
+      });
+    });
+  </script>
 
   <script src="script.js"></script>
 </body>
