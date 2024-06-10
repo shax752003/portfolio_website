@@ -285,72 +285,68 @@
 </section>
 
    <!-- Contact Section -->
-   <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="trapdoor-container">
-        <img src="./assets/email.png" alt="Email icon" class="front-icon" />
-        <div class="trapdoor">
-          <div class="top door"></div>
-          <div class="bottom door"></div>
-          <div class="contact-link">
-            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-            <a href="mailto:examplemail@gmail.com">Gmail</a>
-          </div>
-        </div>
+  <section id="contact">
+   <div class="contact_us_2">
+    <div class="responsive-container-block big-container">
+      <div class="blueBG">
       </div>
-      <div class="trapdoor-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="front-icon" />
-        <div class="trapdoor">
-          <div class="top door"></div>
-          <div class="bottom door"></div>
-          <div class="contact-link">
-            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-            <a href="https://www.linkedin.com">LinkedIn</a>
+      <div class="responsive-container-block container">
+        <form class="form-box">
+          <div class="container-block form-wrapper">
+            <p class="text-blk contactus-head">
+              Get in Touch
+            </p>
+            <p class="text-blk contactus-subhead">
+              Nunc erat cursus tellus gravida.
+            </p>
+            <div class="responsive-container-block">
+              <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
+                <p class="text-blk input-title">
+                  FIRST NAME
+                </p>
+                <input class="input" id="ijowk" name="FirstName" placeholder="Please enter first name...">
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">
+                  LAST NAME
+                </p>
+                <input class="input" id="indfi" name="Last Name" placeholder="Please enter last name...">
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">
+                  EMAIL
+                </p>
+                <input class="input" id="ipmgh" name="Email" placeholder="Please enter email...">
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">
+                  PHONE NUMBER
+                </p>
+                <input class="input" id="imgis" name="PhoneNumber" placeholder="Please enter phone number...">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
+                <p class="text-blk input-title">
+                  WHAT DO YOU HAVE IN MIND
+                </p>
+                <textarea class="textinput" id="i5vyy" placeholder="Please enter query..."></textarea>
+              </div>
+            </div>
+            <button class="submit-btn">
+              Submit
+            </button>
           </div>
-        </div>
-      </div>
-      <div class="trapdoor-container">
-        <img src="./assets/github.png" alt="GitHub icon" class="front-icon" />
-        <div class="trapdoor">
-          <div class="top door"></div>
-          <div class="bottom door"></div>
-          <div class="contact-link">
-            <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
-            <a href="https://github.com">GitHub</a>
+          <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="linkedin"
+              onclick="location.href='https://www.linkedin.com/in/sha7052003'" />
+            <img src="./assets/github.png" alt="github" onclick="location.href='https://github.com/shax752003'" />
+            <img src="./assets/gmail.png" alt="gmail"
+              onclick="location.href='https://mail.google.com/mail/u/0/?hl=en#inbox'" />
           </div>
-        </div>
-      </div>
-      <div class="trapdoor-container">
-        <img src="./assets/twitter.png" alt="Twitter icon" class="front-icon" />
-        <div class="trapdoor">
-          <div class="top door"></div>
-          <div class="bottom door"></div>
-          <a href="https://twitter.com/twholman" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="false">Follow @twholman</a>
-          <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-            if(!d.getElementById(id)){
-              js=d.createElement(s);js.id=id;
-              js.src="https://platform.twitter.com/widgets.js";
-              fjs.parentNode.insertBefore(js,fjs);
-            }}(document,"script","twitter-wjs");
-          </script>
-        </div>
+        </form>
       </div>
     </div>
-  </section>
-
-  <script>
-    document.querySelectorAll('.trapdoor').forEach(trapdoor => {
-      trapdoor.addEventListener('mouseover', function() {
-        this.classList.add('open');
-      });
-      trapdoor.addEventListener('mouseout', function() {
-        this.classList.remove('open');
-      });
-    });
-  </script>
+  </div>
+</section>
 
   <script src="script.js"></script>
 </body>
